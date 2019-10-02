@@ -19,12 +19,12 @@ the needed version.
 "repositories": [
         {
             "type": "git",
-            "url": "git@git.dev.kochava.com:lib-php/fifty-one-degrees-php-common-api.git"
+            "url": "git@github.com/Kochava/fiftyone-php-common-api.git"
         },
 ]
 ...
 "require": {
-    "fiftyonedegrees/php-common-ap": "~3.0.0@stable"
+    "fiftyonedegrees/php-common-api": "dev-master"
 }
 ...
 ```
