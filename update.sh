@@ -19,7 +19,7 @@ echo "Unzipping release"
 unzip $ZIPFILE
 
 echo "Gathering php/common-api from release (${RELEASE_DIR})"
-mv "${RELEASE_DIR}LICENSE" .
+mv "${RELEASE_DIR}/LICENSE" .
 mv "${RELEASE_DIR}/php/common-api/51Degrees" .
 mv "${RELEASE_DIR}/php/common-api/composer.json" .
 
