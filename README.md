@@ -19,7 +19,7 @@ the needed version.
 "repositories": [
         {
             "type": "git",
-            "url": "git@github.com/Kochava/fiftyone-php-common-api.git"
+            "url": "https://github.com/Kochava/fiftyone-php-common-api.git"
         },
 ]
 ...
