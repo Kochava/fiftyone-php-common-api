@@ -1,6 +1,7 @@
 {
   "name": "fiftyonedegrees/php-common-api",
   "description": "The 51Degrees PHP common API aims to make implementing Device Detection in PHP easier than ever.",
+  "type": "library",
   "keywords": [
     "device detection"
   ],
