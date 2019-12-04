@@ -1,8 +1,23 @@
 #!/usr/bin/env bash
 
+if [ $# -lt 1 ]; then
+    echo "Too few arguments"
+    exit 1
+fi
+
 VERSION=$1
+
 ZIPFILE="${VERSION}.zip"
-RELEASE_DIR="Device-Detection-${VERSION#?}" # the directory with "v" removed from the tag
+
+
+if [ $# -eq 2 ]; then
+    # if a second parameter is passed, then a branch/sha was supplied through the first argument
+    RELEASE_DIR="Device-Detection-${VERSION}"
+else
+    # by default the first argument is a tag
+    RELEASE_DIR="Device-Detection-${VERSION#?}" # the directory with "v" removed from the tag
+fi
+
 DEVICE_DETECTION_ZIP_URL="https://github.com/51Degrees/Device-Detection/archive/${ZIPFILE}"
 
 echo "Removing existing files"
